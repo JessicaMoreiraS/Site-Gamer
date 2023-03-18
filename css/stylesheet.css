@@ -1,0 +1,1002 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #011224/*#011224*/; 
+    font-family: 'Mitr';
+}
+.superior{
+    display: flex;
+}
+.superior img{
+    border-radius: 50%;
+    width: 90%;
+    margin: 0.5em;
+}
+.superior a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Press Start 2P';
+    color: rgb(172, 0, 0);
+    font-size: 220%;
+    margin: 2.5em 0em;
+}
+
+/*                                              Barra de busca e btns  */
+
+.buscaELogin{
+    display: flex;
+    align-items: center;
+    background-color: #b92b27 /*rgb(172, 0, 0)*/;
+    border: solid 10px #011224 /*rgb(20, 20, 20)*/;
+    padding: 0.8%;
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    width: 150%;
+    height: 3em;
+    top: 115%;
+}
+#areaBusca{
+    width: 50%;
+    font-size: 160%;
+    color: #011224;
+    border: solid 3px #011224;
+}
+.btnBusca {
+    width: 3.8%;
+    cursor: pointer;
+    background-color: #011224;
+    color: #BFE6F5;
+    font-size: 150%;
+}
+.btnBusca:hover{
+    background-color: #BFE6F5;
+    color: #011224;
+}
+.caminho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+}
+.caminho .linkOpcoes{
+    margin-left: -30%;
+}
+.caminho p{
+    color: #b92b27;
+    font-size: 45%;
+    transition: 0.4s;
+}
+.btnTarefas{
+    display: inline;
+    font-size: 230%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin: 0.8% 3% -0.8% 3%;
+}
+
+.btnTarefas a{
+    margin: 0% 15%;
+    color: #fff;
+}
+.btnTarefas a:hover ~ p,
+.btnTarefas a:hover{
+    color: #ebf5fc;
+}
+.main{
+    width: 80%;
+    min-width: 60%;
+    background-color: #ebf5fc;
+    margin: 0 auto;
+}
+
+#container-footer{
+    margin: 0 auto;
+}
+
+/*                                                       Rodapé*/
+footer{
+    background-image:linear-gradient(#b92b27, #b92b27/*rgb(172, 0, 0), rgb(140, 0, 0)*/);
+    height: 13em;
+    display: flex;
+    width: 100%;
+}
+footer .caixa{
+    width: 100%;
+}
+.links{
+    display: flex;
+    align-items: stretch;
+}
+.coluna1, .coluna2, .coluna3, .redesELogo{
+    min-width: 12rem;
+    margin: 2% 2%;
+}
+.redesELogo{
+    flex-grow: 5;
+}
+.links ul h3{
+    color: white;
+    font-size: 125%;
+    text-decoration: underline;
+}
+.links ul li{
+    list-style-type: none;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+}
+.links ul li a:hover{
+    color: black;
+    text-decoration:underline;
+}
+
+.redesELogo{
+    flex-direction: column;
+}
+.empresa{
+   display: flex;
+}
+.empresa p{
+    font-family: 'Press Start 2P';
+    font-size: 150%;
+    font-weight: bold;
+    margin: 10% 2%;
+    margin-right: 8%;
+}
+.empresa img{
+    width: 6em;
+    border-radius: 50%;
+}
+
+footer .a{
+    text-decoration: none;
+    color: #011224;
+}
+
+/*                                                Botões para acessar as redes sociais*/
+.ulRedes{
+    margin: -0.5em 0em 1em 0em;
+    position: relative;
+    display: flex;
+}
+.ulRedes .liRedes{
+    list-style: none;
+}
+.ulRedes .liRedes .aRedes{
+    position:relative;
+    width: 60px;
+    height: 60px;
+    background-color: #f1f1f1;
+    display: block;
+    text-align:center;
+    margin: 0 10px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #fff, #ddd);
+    transition: 0.5s;
+}
+.ulRedes .liRedes .aRedes:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.ulRedes .liRedes .aRedes .fa-brands{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 5px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.3s;
+}
+.ulRedes .liRedes .aRedes .fa-brands{
+    font-size: 170%;
+}
+ /*                                                 Efeitos de cores nos botões das redes sociais*/
+.ulRedes .liRedes:nth-child(1) .aRedes:hover .fa-brands{
+    color: #3b5998;
+}
+.ulRedes .liRedes:nth-child(2) .aRedes:hover .fa-brands{
+    color: #c32aa3;
+}
+.ulRedes .liRedes:nth-child(3) .aRedes:hover .fa-brands{
+    color: #25D366;
+}
+.ulRedes .liRedes:nth-child(4) .aRedes:hover .fa-brands{
+    color: #ff0000;
+}
+
+
+/*----------------------------------------------------2-----------------------------------
+                                                    Exclusivo Home*/
+
+
+
+.headerHome{
+    background-color: #011224;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.bolhas{ /*Caixa de bolinhas*/
+    position: relative;
+    display: flex;
+}
+.bolhas span{ /*Configurando bolinhas azuis, cada span é uma bolinha azul*/
+    position: relative;
+    width: 4vh;
+    height: 4vh;
+    min-width: 4vh;
+    min-height: 4vh;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animacaoBolinhas 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bolhas span:nth-child(even){ /*Criando bolinhas rosas "gêmeas" das azuis*/
+    background: #ff2d75;
+    box-shadow: 0 0 0 #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes animacaoBolinhas{
+    0%{
+        transform: translateY(100vh) scale(0);/*verificar aqui caso a bonha nao esteja se movendo corretamente*/
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+/*                                             Letreiro do nome da empresa      */
+.caixa-nomeEmpresa-btnPrincipal{
+    padding-top: 15%;
+}
+.nomeEmpresa{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P';
+    font-size: 4.5em;
+    /*top: 25%;
+    right: 0; /*centraliza
+    left: 0;*/
+}
+.nomeEmpresa span{
+    animation: brilho 4s ease-in-out infinite;
+}
+.nomeEmpresa span:nth-of-type(2){
+    animation-delay: 0.5s;
+}
+.nomeEmpresa span:nth-of-type(3){
+    animation-delay: 1s;
+}
+.nomeEmpresa span:nth-of-type(4){
+    animation-delay: 1.5s;
+}
+.nomeEmpresa span:nth-of-type(5){
+    animation-delay: 2s;
+}
+.nomeEmpresa span:nth-of-type(6){
+    animation-delay: 2.5s;
+}
+.nomeEmpresa span:nth-of-type(7){
+    animation-delay: 3s;
+}
+.nomeEmpresa span:nth-of-type(8){
+    animation-delay: 3.5s;
+}
+@keyframes brilho{
+    0%{ /*Efeito de brilho que acende*/
+        color: #fff;
+        text-shadow: 0 0 12px #BFE6F5, 0 0 50px #BFE6F5, 0 0 100px #BFE6F5;
+    }
+    10%, 90%{ /*Cor que fica por mais tempo*/
+        color: #1E85B2;
+        text-shadow: none;
+    }
+}
+/*                                                           Logo*/
+.caixa-nomeEmpresa-btnPrincipal{
+    margin: 0 auto;
+    width: 75%;
+}
+.caixa-nomeEmpresa-btnPrincipal .logo{
+    width: 10%;
+    border-radius: 50%;
+    margin: 5% 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*                                                  Botão principal da home     */
+.caixa-nomeEmpresa-btnPrincipal a{
+    text-decoration: none;
+}
+.btnPrincipal{
+    position: relative;   
+
+    background-color: rgb(20, 20, 20);
+    border: solid 2 black;
+    border-radius: 10px;
+    padding: 1.5% 3%;
+    margin: 0% 42% 0;
+
+    text-transform: uppercase; /*Deixa tudo em maiuscula*/
+    font-weight: bold;
+    font-size: 150%;
+    font-family: 'Mitr';
+    text-decoration: none;
+
+    cursor: pointer;
+    display: inline-block;
+    color: #1E85B2; /*fonte*/
+    border: #1E85B2 8px solid; /*borda*/
+
+    box-shadow: inset 0 0 32px 0 #65C2EB, 0 0 32px 0 #65C2EB; /*Luz de dentro, luz de fora*/
+    text-shadow: 0 0 150% hsl(0% 0% 100% / 0.3), 0 0 32px 0;
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnPrincipal:hover{
+    color: #011224;
+    background-color: #BFE6F5; 
+    text-shadow: none;
+    transition: 0.7s;
+    box-shadow: inset 0 0 32px #BFE6F5, 0 0 80px #BFE6F5;
+}
+.btnPrincipal::before{
+    content: "";
+    position: relative;
+    top: 120%;
+    left: 0;
+    background-color: #BFE6F5; /*luz mais comprida debaixo do botão*/
+    width: 100%;
+    height: 100%;
+    transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+    filter: blur(64px);
+    opacity: 0.7;
+    pointer-events:none;
+}
+
+/*                                                          Corpo Home      */
+.parte2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categorias a{
+    text-decoration: none;
+}
+.btnCategoria{
+    display: block;
+    background-color:  #b92b27/*rgb(172, 0, 0)*/;
+    color: white;
+    font-size: 180%;
+    border: solid 2px rgb(45, 45, 70) /*darkred*/;
+    border-radius: 10px;
+    width: 60%;
+    height: 3em;
+    margin: 12% 30%;
+    padding: 1%;
+    cursor:pointer;
+}
+.btnCategoria:hover{
+    background-color: #ff2d75 /*rgba(172, 0, 0, 0.674)*/;
+    transition: 0.3s;
+}
+
+/*                                                          Banner rotativo     */
+.galeria{
+    width: 50%; /*Espço destinado ao Banner*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    border: double 5px #b92b27 /*rgb(172, 0, 0)*/;
+    border-radius: 10px;
+}
+.galeria .fotos{
+    width: 500%; /*Para ocupar 100% do espaço destinado ao banner (galeria), cada uma das 5 fotos dererá ter 100% de largura, totalizando 500%*/
+    animation-name: animacaoBanner;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.galeria .fotos img{
+    width: 19.9%; /*considerando que os 500% são os novos 100%, cada uma das 5 imagens deve ocupar 20% desses 100% (ou seja, 100% de 500%)*/
+}
+@keyframes animacaoBanner{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
+
+/*-----------------------------------------------------------------------3----------------
+                                                                    Exclusivo produtos*/
+.tituloCategoria{
+    text-decoration: none;
+    color: #011224;
+    margin-left: 3%;
+    font-size: 2em;
+    font-weight: 700;
+}
+.tituloCategoria:hover{
+    color: #b92b27;
+}
+ .containerProdutos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.containerProdutos .cardProdutos{
+    position: relative;
+    width: 18%;
+    height: 20em;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5), 
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 0.5%;
+}
+.containerProdutos .cardProdutos .boxProdutos{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.containerProdutos .cardProdutos:hover .boxProdutos{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #e45c5c, #4f29cd);
+}
+
+.containerProdutos .cardProdutos .boxProdutos .contentProdutos{
+    padding: 20px;
+    text-align: center;
+}
+.imgProduto{
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 7em;
+}
+.containerProdutos .cardProdutos .boxProdutos .contentProdutos h3{
+    font-size: 1.2em;
+    color: rgb(78, 78, 78);
+    transition: 0.5s;
+}
+.containerProdutos .cardProdutos:hover .boxProdutos .contentProdutos h3,
+.containerProdutos .cardProdutos:hover .boxProdutos .contentProdutos p{
+    color: #fff;
+}
+.containerProdutos .cardProdutos .boxProdutos .contentProdutos a{
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.containerProdutos .cardProdutos .boxProdutos .contentProdutos a{
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    background: #1E85B2;
+    margin-top: 6px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.containerProdutos .cardProdutos:hover .boxProdutos .contentProdutos a{
+    background: #b92b27;
+} 
+
+
+/*-------------------------------------------------------4---------------------------
+                                                    Exclusivo Login*/
+.bodyLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #011224 ;
+}
+.mainBoxLogin{
+    position: relative;
+    width: 400px;
+    height: 520px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/*                                   Efeito da luzinha ao redor da caixa*/
+.mainBoxLogin::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 480px;
+    height: 520px;
+    background: linear-gradient(0deg, transparent, #b92b27, #b92b27);
+    transform-origin: bottom right;
+    animation: animateBoxLogin 6s linear infinite;
+}
+.mainBoxLogin::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #b92b27, #b92b27);
+    transform-origin: bottom right;
+    animation: animateBoxLogin 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animateBoxLogin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*                                 caixa dos inputs*/
+.formLogin{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #011224;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.formLogin h2{
+    color: #BFE6F5;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+/*                                  Configurar os inputs*/
+.inputBoxLogin{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.inputBoxLogin input{
+    position: relative;
+    width: 100%;
+    padding: 50px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #011224;
+    font-family: 'Mitr';
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputBoxLogin span{
+    position: absolute;
+    left: 2px;
+    color: #4fc3dc;
+    font-size: 1em;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.05s;
+}
+.inputBoxLogin input:valid ~ span,
+.inputBoxLogin input:focus ~ span{
+    color: #4fc3dc;
+    transform: translateX(-10px) translateY(-70px);
+    font-size: 0.9em;
+}
+.inputBoxLogin i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    width: 100%;
+    height: 2px;
+    background: #4fc3dc; 
+    border-radius: 8px;
+}
+.inputBoxLogin input:valid ~ i,
+.inputBoxLogin input:focus ~ i{
+    height: 44px;
+}
+.linksLogin{
+    display: flex;
+    justify-content: space-between;
+}
+.linksLogin a{
+    margin: 30px 0 0;
+    font-size: 1.1em;
+    color: #c7c7c7;
+    text-decoration: none;
+}
+.linksLogin a:hover
+.linksLogin a:nth-child(2){
+    color: #65C2EB;
+}
+.formLogin button{
+    border: none;
+    outline: none;
+    background: #1E85B2;
+    padding: 11px 25px;
+    width: 105px;
+    margin-top: 18px;
+    margin-left: 34%;
+    margin-bottom: -5px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 110%;
+    font-family: 'Mitr';
+}
+.formLogin button:active{
+    opacity: 0.7;
+}
+
+/*-------------------------------------------------------5---------------------------
+                                                    Exclusivo CadastreSe*/
+.mainBoxCadastreSe{
+    position: relative;
+    width: 900px;
+    height: 620px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    font-size: 1.1em;
+}
+.blocosInputs{
+    display: flex;
+    flex-direction: row;
+}
+.enderecoCliente, .dadosCliente{
+    margin: 0 50px;
+}
+/*                                   Efeito da luzinha ao redor da caixa*/
+.mainBoxCadastreSe::before{
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -20%;
+    width: 620px;
+    height: 690px;
+    background: linear-gradient(0deg, transparent, #4fc3dc, #4fc3dc);
+    transform-origin: bottom right;
+    animation: animateBoxLogin 6s linear infinite;
+}
+.mainBoxCadastreSe::after{
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -20%;
+    width: 620px;
+    height: 650px;
+    background: linear-gradient(0deg, transparent, #4fc3dc, #4fc3dc);
+    transform-origin: bottom right;
+    animation: animateBoxLogin 6s linear infinite; /*Mesmo keyFrame do login*/
+    animation-delay: -3s;
+}
+.formCadastreSe{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #011224;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.formCadastreSe h2{
+    color: #BFE6F5;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+/*                                          Configurar os inputs*/
+.inputBoxCadastreSe{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.inputBoxCadastreSe input{
+    position: relative;
+    width: 100%;
+    padding: 5px 10px 2px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #011224;
+    font-family: 'Mitr';
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputBoxCadastreSe span{
+    position: absolute;
+    left: 2px;
+    color: #4fc3dc;
+    font-size: 0.8em;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.05s;
+}
+.inputBoxCadastreSe input:valid ~ span,
+.inputBoxCadastreSe input:focus ~ span{
+    color: #4fc3dc;
+    transform: translateX(-10px) translateY(-50px);
+    font-size: 0.8em;
+}
+.inputBoxCadastreSe i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    width: 100%;
+    height: 2px;
+    background: #4fc3dc; 
+    border-radius: 8px;
+}
+.inputBoxCadastreSe input:valid ~ i,
+.inputBoxCadastreSe input:focus ~ i{
+    height: 32px;
+}
+.linksCadastreSe{
+    display: flex;
+    justify-content: space-between;
+}
+.linksCadastreSe a{
+    margin: 20px 0 0;
+    font-size: 1em;
+    color: #c7c7c7;
+    text-decoration: none;
+}
+.linksCadastreSe a:hover
+.linksCadastreSe a:nth-child(2){
+    color: #65C2EB;
+}
+.formCadastreSe button{
+    border: none;
+    outline: none;
+    background: #1E85B2;
+    padding: 9px 20px;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 42%;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 110%;
+    font-family: 'Mitr';
+}
+.formCadastreSe button:active{
+    opacity: 0.7;
+}
+
+
+
+/*--------------------------------------------------------------
+                                                Exclusivo faleConosco*/
+.mainFaleConosco{
+    width: 80%;
+    min-width: 60%;
+    background-color: #BFE6F5;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+.perfilEmpresa{
+    background-color: #1e85b2;
+    color: #fff;
+    padding: 1%;
+}
+.falaEmpresa img{
+    margin-top: -5%;
+    width: 45%;
+}
+.falaEmpresa p{
+    width: 20%;
+    max-height: 18%;
+    text-align: justify;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 8%;
+    font-size: 100%;
+    overflow: auto;
+}
+.falaCliente img{
+    width: 45%;
+    margin-left: 55%;
+    margin-top: -20%;
+}
+.falaCliente textarea{
+    position: absolute;
+    margin-left: 49.3%;
+    margin-top: -7%;
+    font-size: 2vh;
+    padding: 0.5% 3.5%;
+    border-radius: 40px;
+    resize: none;
+    background: transparent;
+    outline: 0;
+    width: 15%;
+}
+.emailCliente .EmailClienteFaleConosco{
+    position: absolute;
+    margin-left: 50.5%;
+    margin-top: -12%;
+    font-size: 150%;
+    padding: 0.5% 3.5%;
+    border-radius: 40px;
+    width: 15%;
+    border: solid 4px black;
+}
+
+.formFaleConosco button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10%;
+    background-color: #b92b27;
+    font-size: 3.5vh;
+    width: 10%;
+    height: 6vh;
+    color: #fff;
+    border: solid 2px #741b18;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #262626;
+    translate: 0.5s;
+}
+.formFaleConosco button:hover{
+    background: #b92c27c9;
+    box-shadow: 1px 1px 1px #262626;
+}
+
+/*--------------------------------------------------------------
+                                                Exclusivo QuemSomos*/
+.sobre{
+    font-size: 150%;
+    padding: 2% 15%;
+    color: #011224;
+}
+.boxLogoQuemSomos{
+    float: right;
+    flex: auto;
+    margin-top: 10vh;
+    margin-right: 20%;
+    width: 30%;
+    max-width: 350px;
+}
+.logoSobreAEmpresa{
+    width: 100%;
+    border-radius: 100%;
+}
+.quemSomos{
+    width: 40%;
+    text-align: justify;
+    margin: 5%;
+}
+.quemSomos h3{
+    font-size: 120%;
+    background: #011224;
+    color: #fff;
+    border: solid 2px #011224;
+    padding-left: 2%;
+}
+.quemSomos p{
+    margin: 2%;
+}
+.nossaLocalizacao,
+.nossosValores{
+    width: 90%;
+    margin-left: 5%;
+}
+.nossaLocalizacao h3,
+.nossosValores h3{
+    font-size: 120%;
+    background: #011224;
+    color: #fff;
+    border: solid 2px #011224;
+    padding-left: 2%;
+}
+.containerNossaLocalizacao,
+.boxContainerValores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.containerValores{
+    width: 25%;
+    background: #BFE6F5;
+    margin: 5% 0;
+    padding: 2%;
+    border: double 2px #011224;
+    box-shadow: 10px 10px 10px rgb(160, 160, 160);
+    border-radius: 3px;
+}
+.boxOculosVR{
+    display: flex;
+    background-image: url("../imagens/oculosRealidadeVirtual.png") ;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.nossosValores h4{
+    margin: 25% 0;
+    font-size: 160%;
+    color: #ff0000;
+    animation: brilhoValores 1.5s ease-in-out infinite;
+}
+@keyframes brilhoValores{
+    0%, 8%{ /*Efeito de brilho que acende*/
+        color: #fff;
+        text-shadow: 0 0 10px #BFE6F5, 0 0 50px #BFE6F5, 0 0 100px #BFE6F5;
+    }
+    20%, 90%{ /*Cor que fica por mais tempo*/
+        color: #ff0000;
+        text-shadow: none;
+    }
+}
+.containerValores p{
+    text-align: justify;
+}
+.nossaLocalizacao a{
+    width: 45%;
+    margin: 5% 3%;
+}
+.nossaLocalizacao img{
+    width: 100%;
+    border: double 10px #011224;
+}
+.boxNossaLocalizacao{
+    margin: 10% 3%;
+    font-size: 120%;
+}
+/*----------------------------------------------------AREA DE TESTE------------------------*/
