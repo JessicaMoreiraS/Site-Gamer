@@ -27,3 +27,4 @@ projeto de criação de página web com HTML e  CSS com o tema de venda de produ
   <img src="https://user-images.githubusercontent.com/100448388/226110829-e4db01af-4bfb-4617-a648-c58b42c547cf.png" width="50%">
 </div>
 
+<p>As informações e imagens contidos nessa página são fictícios e para fins de aprendizado</p>
